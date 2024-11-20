@@ -1,0 +1,15 @@
+*{
+  margin: 0px;
+  padding: 0px
+}
+
+body {
+  font-family: system-ui;
+  /* background-image: url('https://png.pngtree.com/background/20230527/original/pngtree-an-old-bookcase-in-a-library-picture-image_2760144.jpg'); */
+  background-color: rgb(28, 28, 28);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  image-rendering: crisp-edges;
+}

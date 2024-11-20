@@ -1,0 +1,79 @@
+.search-books-section {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  bottom: 300px;
+}
+
+.search-books-div {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 300px;
+  row-gap: 60px;
+  column-gap: 60px;
+}
+
+.div-img {
+  width: 218px;
+   background-image: url('https://m.media-amazon.com/images/I/81f1yLVVQRL._AC_UF1000,1000_QL80_.jpg'); 
+  /* background-color: aquamarine; */
+  background-size: cover;
+}
+
+.h1-article {
+  font-size: 23px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.search-books-article {
+  gap: 30px;
+  display: flex;
+  border-radius: 8px;
+  background-color: rgb(231, 238, 236);
+  height: 300px;
+  width: 500px;
+}
+
+.labels-container {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.data-books {
+  width: 290px;
+}
+
+.data {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.div2-img {
+  width: 218px;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYYjCv4FLppndBUwrAKKgPBfxFBpA4mnRQ6A&s');
+}
+
+.div3-img {
+  width: 218px;
+  background-image: url('https://bukz.co/cdn/shop/products/978841268390.jpg?v=1687832187&width=500');
+  background-size: cover;
+}
+
+.div4-img {
+  width: 218px;
+  background-image: url('https://www.lascosasquenoshacenfelices.com/wp-content/uploads/2016/09/geralt-690x1024.jpg');
+  background-size: cover;
+}
+
+.div5-img {
+  width: 218px;
+  background-image: url('https://es.web.img2.acsta.net/img/fe/00/fe00d709777ed4c4adb0e004bb5f16d6.jpg');
+  background-size: cover;
+}
