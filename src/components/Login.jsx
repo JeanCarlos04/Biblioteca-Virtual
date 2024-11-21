@@ -31,7 +31,7 @@ export function Login() {
     };
 
     checkSession();
-  }, [navigate]);
+  }, [navigate, userData]);
 
   const handleGoogleLogin = async () => {
     try {
