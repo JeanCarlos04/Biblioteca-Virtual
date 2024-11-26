@@ -1,0 +1,116 @@
+.search-books-section {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  bottom: 380px;
+}
+
+.search-books-div {
+  display: grid;
+  margin-left: 45px;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 300px;
+  row-gap: 60px;
+  column-gap: 60px;
+}
+
+.div-key {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.img-class {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  height: 100%; 
+}
+
+.div-img {
+
+  width: 218px;
+  background-size: cover;
+}
+
+.h1-article {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.search-books-article {
+  overflow: auto;
+  gap: 30px;
+  display: flex;
+  border-radius: 8px;
+  background-color: rgb(231, 238, 236);
+  min-height: 300px;
+  width: 500px;
+  
+}
+
+.btn-like {
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  border-style: none;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.p-description {
+  padding-bottom: 20px;
+  padding-right: 20px;
+  text-align: justify
+}
+
+.icon-like {
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.icon-like:hover {
+  color: rgb(219, 211, 46);
+}
+
+.like-div {
+  margin-bottom: 15px;
+  position: absolute;
+  bottom: 0;
+  gap: 8px;
+  width: 95%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.likeCount {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.labels-container {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.data-books {
+  width: 290px;
+  position: relative;
+}
+
+.data {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}

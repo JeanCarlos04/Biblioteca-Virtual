@@ -1,0 +1,60 @@
+
+.user-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    margin-top: 10px;
+    right: 20px;
+  }
+  
+  .user-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .user-name {
+    margin-left: 10px;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .menu {
+    position: fixed;
+    margin-top: 10px;
+    right: 20px;
+    top: 60px;
+    background-color: rgb(191, 44, 44);
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 150px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .menu-photo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logout-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .logout-btn:hover {
+    background-color: darkred;
+  } 

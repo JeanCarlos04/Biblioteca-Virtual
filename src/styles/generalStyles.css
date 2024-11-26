@@ -1,0 +1,413 @@
+.nav-class {
+  position: absolute;
+  width: 100%;
+  flex-direction: column;
+  height: 255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-li {
+  position: absolute;
+  bottom: 90px;
+  width: 250px;
+  height: 40px;
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.list-a {
+  margin-left: 5px;
+  font-weight: bold;
+  list-style: none;
+  height: 100%;
+  width: 200px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.list-a:hover {
+  background-color: #f1efef;
+}
+
+.a-nav {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(22, 21, 21);
+}
+
+.select-generous {
+  padding-left: 25px;
+  padding-right: 15px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-appearance: none;
+  appearance: none;
+  font-weight: bold;
+  border-style: none;
+  height: 100%;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.select-generous:hover {
+  cursor: pointer;
+  background-color: #f1efef;
+}
+
+.select-generous:focus {
+  outline: none;
+}
+
+.search {
+  position: absolute;
+  top: 165px;
+  margin-bottom: 20px;
+  height: 43px;
+  width: 380px;
+  border-radius: 8px;
+  padding-left: 30px;
+  background-color: #e6e2e2;
+}
+
+.input-nav::placeholder {
+  font-weight: bold;
+  color: #585454;
+}
+
+.input-nav {
+  font-size: 15px;
+  height: 40px;
+  outline: none;
+  background: transparent;
+  border: none;
+  width: 320px;
+}
+
+.btn-nav {
+  position: relative;
+  top: 3px;
+  left: 15px;
+  margin-top: 10px;
+  background: transparent;
+  color: #171717;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.div-loading {
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-loading {
+  font-size: 18px;
+}
+
+.h1-loading {
+  color: #ffffff;
+}
+
+.main-container {
+  display: flex;
+  width: 10%;
+  height: 100vh;
+}
+
+.aside-container {
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+  width: 50px;
+  overflow: hidden;
+  background-color: #1d2e41;
+  transition: 0.5s;
+}
+
+.span-verse {
+  color: rgb(0, 153, 255);
+}
+
+.aside-container:hover {
+  background-color: #2d3e50;
+  width: 220px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  border-right: solid 1px #444343;
+}
+
+.div-logo {
+  margin-top: 20px;
+}
+
+.aside-container hr {
+  border: #dddada solid 1px;
+  margin-left: 35px;
+  width: 65%;
+}
+
+.div-container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.div-container1 h1 {
+  color: #808282;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 100%;
+}
+
+.div-container1 button {
+  margin-left: 50px;
+  color: #f2f2f2;
+}
+
+.logo {
+  width: 120px;
+}
+
+.div-container2 {
+  gap: 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div-container2 h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.div-container2 h5 {
+  color: #f2f2f2;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.menu-title {
+  color: #f2f2f2;
+}
+
+.btn-aside {
+  font-size: 17px;
+  display: flex;
+  font-weight: bold;
+  color: #f2f2f2;
+  background: none;
+  border-style: none;
+  cursor: pointer;
+  color: black;
+  transition: 0.2s;
+}
+
+.btn-aside:hover {
+  color: #a2a4a5;
+}
+
+.btn-logout {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-radius: 100%;
+  border-style: none;
+  cursor: pointer;
+}
+
+.icon-logout {
+  font-size: 30px;
+  color: #f2f2f2;
+  transition: 0.1s;
+}
+
+.icon-logout:hover {
+  font-size: 33px;
+  color: #d64d4d;
+}
+
+.contact-title {
+  color: #808282;
+  font-size: 17px;
+}
+
+.icon-star {
+  color: #f2f2f2;
+  position: absolute;
+  font-size: 20px;
+  margin-right: 10px;
+  top: 403px;
+  left: 15px;
+}
+
+.icon-bell {
+  color: #f2f2f2;
+  position: absolute;
+  font-size: 20px;
+  margin-right: 10px;
+  top: 454px;
+  left: 15px;
+}
+
+.icon-home {
+  color: #f2f2f2;
+  position: absolute;
+  font-size: 20px;
+  margin-right: 10px;
+  top: 303px;
+  left: 15px;
+}
+
+.icon-book {
+  color: #f2f2f2;
+  position: absolute;
+  font-size: 20px;
+  margin-right: 10px;
+  top: 353px;
+  left: 15px;
+}
+
+.icon-group {
+  color: #f2f2f2;
+  position: absolute;
+  font-size: 20px;
+  margin-right: 15px;
+  top: 600px;
+  left: 35px;
+}
+
+.hr-line,
+.btn-logout,
+.logo,
+.div-logo h1,
+.div-container1 h1,
+.div-container1 button,
+.div-container1 button span,
+.div-container2 h1,
+.div-container2 h5 {
+  opacity: 0;
+}
+
+.aside-container:hover .hr-line,
+.aside-container:hover .btn-logout,
+.aside-container:hover .div-container1.icon,
+.aside-container:hover .logo,
+.aside-container:hover .div-logo h1,
+.aside-container:hover .div-container1 h1,
+.aside-container:hover .div-container1 button,
+.aside-container:hover .div-container1 button span,
+.aside-container:hover .div-container2 h1,
+.aside-container:hover .div-container2 h5 {
+  opacity: 1;
+}
+
+/* PIE DE PAGINA*/
+
+footer {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #373739;
+  padding: 60px 10%;
+}
+
+.footer-col {
+  width: 25%;
+}
+
+.footer-col h4 {
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 22px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background-color: #00ffff;
+  height: 2px;
+  width: 40px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  display: block;
+  font-size: 19px;
+  text-transform: capitalize;
+  color: #bdb6b6;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.footer-col ul li a:hover {
+  color: white;
+  padding-left: 2px;
+}
+
+.links a {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  color: #4d4f55;
+  background-color: #ffffff;
+  margin: 0 8px 8px 0;
+  text-align: center;
+  line-height: 44px;
+  border-radius: 50%;
+  transition: 0.4s;
+  align-items: center;
+  justify-content: center;
+  image-rendering: optimizeQuality;
+}
+
+.logos {
+  width: 20px;
+  height: 23px;
+  padding-top: 10px;
+  image-rendering: optimizeQuality;
+}
+.face-git {
+  width: 23px;
+}
+
+.links a:hover {
+  color: #00ebec;
+  background-color: white;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
