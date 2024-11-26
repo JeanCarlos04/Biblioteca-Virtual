@@ -5,10 +5,17 @@
 
 body {
   font-family: system-ui;
+<<<<<<< HEAD
    background-image: url('https://wallpapercrafter.com/desktop/12511-books-library-shelves-lighting-4k.jpg'); 
   background-color: rgb(28, 28, 28);
   background-size: cover;
   height: 100%;
+=======
+  /* background-image: url('https://png.pngtree.com/background/20230527/original/pngtree-an-old-bookcase-in-a-library-picture-image_2760144.jpg'); */
+  background-color: rgb(28, 28, 28);
+  background-size: cover;
+  height: 100vh;
+>>>>>>> e25c9bffbc2786cfa7dcc733a2c7b45059368ebb
   background-position: center;
   background-attachment: fixed;
   image-rendering: crisp-edges;

@@ -67,7 +67,7 @@ function ContextLibraryProvider({ children }) {
       value={{
         handleLogin,
         handleLogout,
-        user,
+        user 
       }}
     >
       {children}

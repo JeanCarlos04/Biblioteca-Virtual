@@ -2,4 +2,9 @@
 .env
 .env.production
 
+<<<<<<< HEAD
 /node_modules
+=======
+/node_modules
+/dist
+>>>>>>> e25c9bffbc2786cfa7dcc733a2c7b45059368ebb
