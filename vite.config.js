@@ -4,20 +4,6 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-<<<<<<< HEAD
-  server: {
-    port: 5173, 
-  },
-
-  /*si quitas
-  server: {
-    port: 5173, 
-  },
-
-  por defecto se pondra 5173
-  O sin eso no funciona el tunnel?
-  */ 
-=======
   test: {
     globals: true,
     environment: "jsdom",
@@ -26,5 +12,4 @@ export default defineConfig({
     // since parsing CSS is slow
     css: true,
   },
->>>>>>> e25c9bffbc2786cfa7dcc733a2c7b45059368ebb
 });

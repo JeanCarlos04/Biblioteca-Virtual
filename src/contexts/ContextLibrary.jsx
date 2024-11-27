@@ -57,7 +57,7 @@ function ContextLibraryProvider({ children }) {
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    window.location.href = "/";
+    window.location.href = "/login";
   };
 
   // FIN de login con google
