@@ -12,12 +12,12 @@
   grid-template-rows: auto;
   width: 100%;
   background-color: transparent;
-  gap: 30px;
+  gap: 35px;
 }
 
 .article-reserve {
   background-color: rgb(255, 255, 255);
-  gap: 40px;
+  gap: 20px;
   display: flex;
   justify-content: center;
   margin: 0px 60px 0px 60px;
@@ -38,7 +38,7 @@
   justify-content: center;
   width: 63%;
   display: flex;
-  gap: 90px;
+  gap: 80px;
   height: 75%;
 }
 
@@ -54,24 +54,6 @@
   background-color: black;
   font-size: 14px;
   transition: 0.1s;
-}
-
-.btn-return {
-  margin-right: 50px;
-  width: 120px;
-  height: 35px;
-  border-radius: 8px;
-  cursor: pointer;
-  border: none;
-  font-weight: bold;
-  color: #fff;
-  background-color: black;
-  font-size: 14px;
-  transition: 0.1s;
-}
-
-.btn-return:hover {
-  background-color: rgb(230, 94, 94);
 }
 
 .btn-reser:hover {
@@ -105,4 +87,34 @@
   border-radius: 5px;
 }
 
+.div-buttons {
+  gap: 30px;
+  margin-left: 10px;
+  display: flex;
+  height: 100%;
+  width: 150x;
+  justify-content: center;
+  flex-direction: column;
+}
 
+.btn-delete {
+  margin-right: 50px;
+  width: 120px;
+  height: 35px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: black;
+  font-size: 14px;
+  transition: 0.1s;
+}
+
+.btn-delete:hover {
+  background-color: rgb(230, 94, 94);
+}
+
+.title-h1 {
+  width: 100px;
+}

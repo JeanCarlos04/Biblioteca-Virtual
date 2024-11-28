@@ -1,42 +1,47 @@
 import { FaSignOutAlt } from "react-icons/fa";
+import { TbDoorExit } from "react-icons/tb";
 import { useState } from "react";
-// import { useContext } from "react";
-// import { ContextLibrary } from "../contexts/ContextLibrary";
+import { useContext } from "react";
+import { ContextLibrary } from "../contexts/ContextLibrary";
 
 export function UserPerfil() {
   const [handleUserCard, setHandleUserCard] = useState(false);
-  // const { user } = useContext(ContextLibrary);
+  const { user, handleLogout } = useContext(ContextLibrary);
 
   const handleCard = () => {
     setHandleUserCard(!handleUserCard);
   };
 
+  console.log(user);
+
   return (
     <>
-      <div onClick={handleCard} className="user-box">
+      <div className="user-box">
         <img
+          onClick={handleCard}
           src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
           alt="User"
-          className="user-photo"
-        />
-        <span className="user-name">Alexander</span>
+          className="user-photo"/>
       </div>
 
       {handleUserCard && (
         <div className="menu">
           <div className="menu-item">
+            <span className="email-box">{user.email}</span>
             <img
-              src="https://via.placeholder.com/50"
+              src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
               alt="User"
-              className="menu-photo"
-            />
-            <span className="menu-user-name">Alexander</span>
+              className="user-photo-inside"/>
+            <span className="menu-user-name">Welcome Alexander!</span>
+            <button className="logout-btn" onClick={() => handleLogout()}>
+              <FaSignOutAlt className="btn-close" /> Log out
+            </button>
           </div>
-          <button className="logout-btn">
-            <FaSignOutAlt /> Logout
-          </button>
         </div>
       )}
     </>
   );
 }
+
+
+

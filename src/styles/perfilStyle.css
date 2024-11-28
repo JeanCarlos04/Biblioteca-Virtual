@@ -1,60 +1,138 @@
 
 .user-box {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    position: fixed;
-    margin-top: 10px;
-    right: 20px;
-  }
+  position: fixed;
+  margin-top: 20px;
+  top: 0;
+  right: 25px;
+  z-index: 997;
+}
   
-  .user-photo {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-  }
+.user-photo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
   
-  .user-name {
-    margin-left: 10px;
-    font-size: 18px;
-    color: white;
-  }
+.menu {
+  width: fit-content;
+  z-index: 997;
+  position: fixed;
+  display: flex;
+  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+  right: 30px;
+  top: 80px;
+  border-radius: 10px;
+  background-color: #eaf1fb;
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: fit-content;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
   
-  .menu {
-    position: fixed;
-    margin-top: 10px;
-    right: 20px;
-    top: 60px;
-    background-color: rgb(191, 44, 44);
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 150px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
+.menu-item {
+  gap: 18px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.email-box{
+  color: #8f8e8e;
+  font-size: 14px;
+}
+
+.user-photo-inside {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.menu-user-name{
+  font-size: 15px;
+}
+
+.menu-photo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
   
-  .menu-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
+.logout-btn {
+  color: rgb(0, 0, 0);
+  width: 50%;
+  height: 30px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-close{
+  margin-right: 5px;
+  width: 17px;
+  height: 15px;
+}
   
-  .menu-photo {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-  }
-  
-  .logout-btn {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .logout-btn:hover {
-    background-color: darkred;
-  } 
+.logout-btn:hover {
+  background-color: rgb(222, 91, 91);
+  transition: 0.3s;
+} 
+
+.perfil-mybooks {
+  color: rgb(0, 0, 0);
+  width: 50%;
+  height: 30px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.perfil-mybooks:hover {
+  background-color:#1d2e41;;
+  transition: 0.3s;
+  color: white;
+} 
+
+.menu-book-btn{
+  margin-right: 5px;
+  width: 17px;
+  height: 15px;
+}
+
+.history-btn{
+  color: rgb(0, 0, 0);
+  width: 50%;
+  height: 30px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.history-btn:hover {
+  background-color: #1d2e41;;
+  transition: 0.3s;
+  color: white;
+} 
+
+.menu-history-btn{
+  margin-right: 5px;
+  width: 17px;
+  height: 15px;
+}

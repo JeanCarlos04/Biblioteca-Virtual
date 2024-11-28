@@ -11,6 +11,17 @@ const ContextLibrary = createContext();
 
 function ContextLibraryProvider({ children }) {
   const navigate = useNavigate();
+  const [reservedBooks, setReservedBooks] = useState([]);
+
+  const addReservedBooks = (books) => {
+    setReservedBooks((prevBooks) => [...prevBooks, books]);
+  }
+
+  const removeReservedBook = (bookId) => {
+    setReservedBooks((prevBooks) =>
+      prevBooks.filter((book) => book.id !== bookId)
+    );
+  };
 
   // LOGIN CON GOOGLE
 
@@ -67,6 +78,9 @@ function ContextLibraryProvider({ children }) {
       value={{
         handleLogin,
         handleLogout,
+        addReservedBooks,
+        removeReservedBook,
+        reservedBooks,
         user 
       }}
     >
