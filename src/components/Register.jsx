@@ -3,6 +3,8 @@ import { FcGoogle } from "react-icons/fc";
 import { useState, useContext } from "react";
 import { ContextLibrary } from "../contexts/ContextLibrary";
 import { supabase } from "../supabase/dataClient";
+import { BsSendExclamationFill } from "react-icons/bs";
+import { IoClose } from "react-icons/io5";
 
 export function Register() {
   const { handleLogin } = useContext(ContextLibrary);
@@ -10,6 +12,9 @@ export function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [repeatPassword, setRepeatPassword] = useState("");
+  const [alert, setAlert] = useState(false);
+
+  // Funcion crear nuevo usuario
 
   async function signUpNewUser(e) {
     e.preventDefault();
@@ -21,10 +26,9 @@ export function Register() {
           emailRedirectTo: `${window.location.origin}/login`,
         },
       });
-      data ? console.log(data) : console.error(error);
+      data ? setAlert(true) : console.error(error);
       setEmail("");
       setPassword("");
-      navigate("/login");
     } else {
       console.log("Las contraseñas no son iguales");
     }
@@ -42,12 +46,12 @@ export function Register() {
           Create your account and start reading right now.
         </p>
         <p className="p-cuenta">Do you have an account?</p>
-        <button onClick={() => navigateTo()} className="bton-cuenta">
+        <button onClick={navigateTo} className="bton-cuenta">
           Sign In
         </button>
         <hr className="hr-google"></hr>
         <span className="span-hr">Or</span>
-        <button onClick={() => handleLogin()} className="btn-google">
+        <button onClick={handleLogin} className="btn-google">
           <FcGoogle className="google-icon"></FcGoogle>Continue with Google
         </button>
       </div>
@@ -82,10 +86,22 @@ export function Register() {
             />
           </div>
           <div className="btn-container">
-            <button className="boton-up">Sign Up </button>
+            <button className="boton-up"> Sign Up </button>
           </div>
         </div>
       </form>
+
+      {alert && (
+        <div className={`gmail-alert ${alert ? "active" : ""}`}>
+          <BsSendExclamationFill className="gmail-check-alert" />
+          <h1 className="gmail-h1-alert">
+            We have sent you a confirmation email
+          </h1>
+          <button onClick={() => setAlert(false)} className="gmail-btn-alert">
+            <IoClose className="gmail-close-alert" />
+          </button>
+        </div>
+      )}
     </div>
   );
 }

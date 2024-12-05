@@ -13,9 +13,13 @@ function ContextLibraryProvider({ children }) {
   const navigate = useNavigate();
   const [reservedBooks, setReservedBooks] = useState([]);
 
+  // Agregar libros
+
   const addReservedBooks = (books) => {
     setReservedBooks((prevBooks) => [...prevBooks, books]);
-  }
+  };
+
+  // Eliminar libros
 
   const removeReservedBook = (bookId) => {
     setReservedBooks((prevBooks) =>
@@ -68,7 +72,6 @@ function ContextLibraryProvider({ children }) {
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    window.location.href = "/login";
   };
 
   // FIN de login con google
@@ -81,7 +84,7 @@ function ContextLibraryProvider({ children }) {
         addReservedBooks,
         removeReservedBook,
         reservedBooks,
-        user 
+        user,
       }}
     >
       {children}

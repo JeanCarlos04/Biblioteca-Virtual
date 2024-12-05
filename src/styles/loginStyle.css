@@ -141,3 +141,51 @@
 .p-cont {
   color: #f2f2f2;
 }
+
+.gmail-alert {
+  z-index: 999;
+  position: fixed;
+  top: 82%;
+  left: 35%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+  background-color: rgb(225, 226, 243);
+  border-radius: 9px;
+  animation: slideDown 0.3s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gmail-h1-alert {
+  font-size: 15px;
+  color: rgb(61, 104, 174);
+}
+
+.gmail-btn-alert {
+  background: transparent;
+  border-style: none;
+}
+
+.gmail-check-alert {
+  color: rgb(44, 53, 117);
+  font-size: 25px;
+  height: 100%;
+}
+
+.gmail-close-alert {
+  color: rgb(44, 55, 117);
+  font-size: 25px;
+}

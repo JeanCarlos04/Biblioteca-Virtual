@@ -7,6 +7,8 @@ export function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  // Iniciar sesion con email y password
+
   async function signInWithEmail(e) {
     e.preventDefault();
     const { data, error } = await supabase.auth.signInWithPassword({

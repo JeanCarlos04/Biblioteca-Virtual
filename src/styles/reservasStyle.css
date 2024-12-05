@@ -1,49 +1,41 @@
-
 .search.search-reserve {
   top: 100px;
 }
 
 .section-reserve {
   top: 240px;
-  position: absolute;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: auto;
-  width: 100%;
-  background-color: transparent;
-  gap: 35px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .article-reserve {
+  padding: 1.4rem;
   background-color: rgb(255, 255, 255);
-  gap: 20px;
   display: flex;
-  justify-content: center;
-  margin: 0px 60px 0px 60px;
+  justify-content: space-between;
+  margin: 0px 8rem 0px 8rem;
   align-items: center;
-  height: 200px;
   border-radius: 8px;
-  border: none;
+  min-width: 1200px;
 }
 
 .img-reserve {
-  height: 170px;
-  width: 120px;
+  height: auto;
+  width: 100px;
   background-color: #213a55;
   border-radius: 8px;
 }
 
 .div-content {
   justify-content: center;
-  width: 63%;
+  align-items: center;
   display: flex;
   gap: 80px;
-  height: 75%;
 }
 
 .btn-reser {
-  margin-right: 50px;
   width: 120px;
   height: 35px;
   border-radius: 8px;
@@ -58,7 +50,7 @@
 
 .btn-reser:hover {
   background-color: #24853d;
-} 
+}
 
 .date-re {
   display: flex;
@@ -89,16 +81,14 @@
 
 .div-buttons {
   gap: 30px;
-  margin-left: 10px;
+  align-items: center;
   display: flex;
   height: 100%;
-  width: 150x;
   justify-content: center;
   flex-direction: column;
 }
 
 .btn-delete {
-  margin-right: 50px;
   width: 120px;
   height: 35px;
   border-radius: 8px;
@@ -116,5 +106,5 @@
 }
 
 .title-h1 {
-  width: 100px;
+  white-space: nowrap;
 }

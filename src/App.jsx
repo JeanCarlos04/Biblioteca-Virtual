@@ -1,7 +1,6 @@
 import { Login } from "./components/Login.jsx";
 import { SearchBooks } from "./components/SearchBooks.jsx";
 import { Register } from "./components/Register.jsx";
-import { UserPerfil } from "./components/UserPerfil.jsx";
 import { Routes, Route } from "react-router-dom";
 import { Reservas } from "./components/Reservas.jsx";
 import "./styles/generalStyles.css";
@@ -18,7 +17,6 @@ function App() {
         <Route path="/" element={<Register />}></Route>
         <Route path="/menu" element={<SearchBooks />}></Route>
         <Route path="/login" element={<Login />}></Route>
-        <Route path="/perfil" element={<UserPerfil />}></Route>
         <Route path="/reservas" element={<Reservas />}></Route>
       </Routes>
     </>

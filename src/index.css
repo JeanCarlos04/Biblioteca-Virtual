@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0px;
-  padding: 0px
+  padding: 0px;
 }
 
 body {
   font-family: system-ui;
-   background-image: url('https://wallpapercrafter.com/desktop/12511-books-library-shelves-lighting-4k.jpg'); 
+  background-image: url("https://wallpapercrafter.com/desktop/12511-books-library-shelves-lighting-4k.jpg");
   background-color: rgb(28, 28, 28);
   background-size: cover;
   height: 100%;
